@@ -6,3 +6,5 @@ services:
     - "8080:80"
     environment: 
     - "content=dalong demo web page"
+    - "DATA=(apple orange pear demo app rong)"
+    - "DATA2=(rongfeng orange pear demo app rong)"

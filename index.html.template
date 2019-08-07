@@ -5,10 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Mustache for docker config demo</title>
+    <style>
+        .applogo {
+            margin: 0 auto;
+            width: 400px;
+            height: 300px;
+            background-color: azure;
+        }
+    </style>
 </head>
 <body>
     <div class="applogo">
-         {{content}}
+        <h1>{{content}}</h1>
+        <div class="items">
+            Things in DATA:
+            <br>
+            {{#DATA2}}
+            Item: {{.}} <br>
+            {{/DATA2}}
+        </div>
     </div>
 </body>
 </html>
